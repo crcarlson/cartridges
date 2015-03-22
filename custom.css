@@ -1,0 +1,112 @@
+#notebook_panel { /* main background */
+    background: #fff;
+    color: #f6f6f6;
+}
+
+div #notebook { /* center the content */
+    background: #fff;
+    width: 800px;
+    margin: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+}
+
+#notebook li { /* More space between bullet points */
+    margin-top:6pt;
+}
+
+.rendered_html *li{  /* More space between bullet points */
+    margin-top:6pt;
+}
+
+div.container { /* make the widths match */
+    width: 780px;
+}
+
+/*The cell is the fundamemntal container for each chunk of work, markdown*/
+/*code, etc. */
+div.cell { 
+    width: 760px;
+}
+
+div.CodeMirror { /* code input area */
+    font-family: "Inconsolata-dz", monospace;
+    font-size: 12pt;
+}
+
+div.cell.code_cell { /* Code output area, print statements, etc */
+    font-size: 12pt;
+    line-height: 115%;
+    background: #fff;
+    border: none;
+    border-radius: 4px;
+    padding-top: 1ex;
+}
+
+/*area that contains rendered markdown*/
+div.text_cell_render{
+    font-family: Computer Modern, "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+    font-size: 14pt;
+    line-height: 130%;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.rendered_html *+ol, *+ul{ /* Remove margin at top of lists*/
+    margin-top:0;
+}
+
+.rendered_html h1 {
+    margin: 0;
+    padding: 0;
+}
+
+.rendered_html h2 {
+    margin: 0;
+    padding: 0;
+}
+
+.rendered_html h3 {
+    margin: 0;
+    padding: 0;
+}
+
+div.input_area { /* box around box with code */
+    border: none;
+    background: #f5f5f5;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding-top: 0.5ex;
+    padding-bottom: 0.5ex;
+    padding-left: 0.5em;
+}
+
+div.prompt { /* remove In/Out prompt */
+    display: none;
+}
+
+div.output_subarea { /* remove margin in front of output */
+    border: none;
+}
+
+div.cell.border-box-sizing.code_cell.running { 
+    /* draw border around running cells */
+    border: 3px dotted #f33;
+}
+
+/* header colours and fonts */
+h1 { color: #444; }
+h2 { color: #444; }
+h3 { color: #444; }
+h4 { color: #444; }
+h5 { color: #444; }
+h6 { color: #444; }
+
+
+/* remove big margins around title */
+div.text_cell_render.border-box-sizing.rendered_html {
+    margin: 0;
+    padding: 0; 
+    margin-left: 1ex;
+}
